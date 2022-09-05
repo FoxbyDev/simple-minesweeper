@@ -1,0 +1,47 @@
+{
+  "name": "simple-minesweeper",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
+      "$path": "src/shared",
+      "RequestRevealCell": {
+        "$className": "RemoteEvent"
+      },
+      "RevealCell": {
+        "$className": "RemoteEvent"
+      },
+      "RequestFlagCell": {
+        "$className": "RemoteEvent"
+      }
+    },
+
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      }
+    },
+
+    "Workspace": {
+      "$ignoreUnknownInstances": true,
+      "$properties": {
+        "FilteringEnabled": true
+      }
+    },
+
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    },
+  
+    "StarterGui": {
+      "$ignoreUnknownInstances": true
+    }
+  }
+}
